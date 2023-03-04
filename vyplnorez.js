@@ -18,7 +18,7 @@ const fillcut = (str, len) => {
     } return false
 }
 
-str = 'andulka'
-len = 4
-lenStr = String(len)
+let str = 'andulka'
+let len = 4
+let lenStr = String(len)
 console.log((fillcut(str, len)))
