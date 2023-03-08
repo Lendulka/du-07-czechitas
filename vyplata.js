@@ -14,21 +14,22 @@ Použítím funkcí salary a taxed spočítejte svoji měsíční mzdu po 15% zd
 
 const salary = (wage, hours, days) => {
     let grossWageNotRound = (wage * hours * days)
-    return grossWage = Math.round(grossWageNotRound)
+    return Math.round(grossWageNotRound)
 }
 
 const taxed = (grossWage, taxRate) => {
     let netWageNotRound = (grossWage - (grossWage * taxRate / 100))
-    return netWage = Math.round(netWageNotRound)
+    return Math.round(netWageNotRound)
 }
 
-let wage = 210.44
-let hours = 10.5
+let wage = 100
+let hours = 10
 let days = 10
 let taxRate = 15
 
-let salaryBeforeTax = salary(wage, hours, days)
-let salaryAfterTax = taxed(salaryBeforeTax, taxRate)
-console.log(salaryBeforeTax, salaryAfterTax)
+let wageBeforeTax = salary(wage, hours, days)
+let wageAfterTax = taxed(wageBeforeTax, taxRate)
+console.log(wageBeforeTax, wageAfterTax)
+
 
 

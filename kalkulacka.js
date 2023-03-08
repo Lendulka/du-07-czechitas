@@ -13,17 +13,18 @@ const calculate = (number1, operation, number2) => {
             return (number1 - number2)
         } else if (operation === '*') {
             return (number1 * number2)
-        } else if (operation === '/' && number2 !== 0) {
+        } else if ((operation === '/') && (number2 !== 0)) {
             return (number1 / number2)
         }
     } return false
 }
 
-let number1 = 300
-let number2 = 10
+let number1 = 12
+let number2 = 6
 let operation = '/'
 
-console.log(calculate(number1, operation, number2))
+let result = (calculate(number1, operation, number2))
+console.log(result)
 
 
 
